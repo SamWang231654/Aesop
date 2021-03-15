@@ -11,18 +11,21 @@ body {
   background-color: #eee9e5;
 }
 
+div#background {
+  position: relative;
+}
+
 div#background img {
   height: 650px;
 }
 
 div#section01 {
+  position: absolute;
+  width: 100%;
+  top: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-div#section01 img {
-  z-index: -1;
 }
 
 div#section01 div.left {
@@ -30,12 +33,75 @@ div#section01 div.left {
 }
 
 div#section01 div.left img#logo {
-  z-index: 3;
+  margin-left: 5%;
   width: 200px;
 }
 
 div#section01 div.middle {
   width: 35%;
+}
+
+div#section01 div.middle p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-family: 'Noto Sans TC';
+  font-weight: 400;
+  color: #333333;
+}
+
+div#section01 div.middle h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-family: 'Noto Sans TC';
+  font-weight: 400;
+  color: #333333;
+}
+
+div#section01 div.middle a {
+  cursor: pointer;
+}
+
+div#section01 div.middle a :hover {
+  background-color: #333333;
+}
+
+div#section01 div.middle a :hover span {
+  color: #fffff1;
+}
+
+div#section01 div.middle a button {
+  background: none;
+  border: 1px solid #888888;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 60px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+div#section01 div.middle a button span {
+  font-size: 14px;
+  font-family: 'Noto Sans TC';
+  font-weight: 400;
+  color: #333333;
+  margin-left: 8%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+div#section01 div.middle a button img {
+  width: 15px;
+  margin-right: 2%;
 }
 
 div#section01 div.right {

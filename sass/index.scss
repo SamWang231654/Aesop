@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    // outline: 1px solid red;
 }
 img{
     width:100%;
@@ -8,24 +9,73 @@ body{
     background-color: rgb(238, 233, 229);
 }
 div#background{
+    position: relative;
     img{
         height: 650px;
     }
 }
 div#section01{
+    position: absolute;
+    width:100%;
+    top:25%;
     display:flex;
-    img{
-        z-index: -1;
-    }
     div.left{
         width:25%;
         img#logo{
-            z-index: 3;
+            margin-left:5%;
             width:200px;
         }
     }
     div.middle{
         width:35%;
+        p{
+            font-size: 14px;
+            margin-bottom:20px;
+            line-height: 1.5;
+            font-family: 'Noto Sans TC';
+            font-weight: 400;
+            color:#333333;
+        }
+        h2{
+            font-size: 30px;
+            margin-bottom:30px;
+            font-family: 'Noto Sans TC';
+            font-weight: 400;
+            color:#333333;
+        }
+        a{
+            cursor:pointer;
+            :hover{
+                background-color: #333333;
+                span{
+                    color:rgb(255, 255, 241);
+                }
+
+            }
+            button{
+                background: none;
+                border:1px solid rgb(136, 136, 136);
+                cursor:pointer;
+                display:flex;
+                justify-content: space-between;
+                align-items: center;
+                width:300px;
+                height: 60px;
+                transition:all .5s;
+                span{
+                    font-size: 14px;
+                    font-family: 'Noto Sans TC';
+                    font-weight: 400;
+                    color:#333333;
+                    margin-left:8%;
+                    transition:all .5s;
+                }
+                img{
+                    width:15px;
+                    margin-right:2%;
+                }
+            }
+        }
     }
     div.right{
         width:40%;
