@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    width:100%;
+}
+body{
+    background-color: rgb(238, 233, 229);
+}
+div#background{
+    img{
+        height: 650px;
+    }
+}
+div#section01{
+    display:flex;
+    img{
+        z-index: -1;
+    }
+    div.left{
+        width:25%;
+        img#logo{
+            z-index: 3;
+            width:200px;
+        }
+    }
+    div.middle{
+        width:35%;
+    }
+    div.right{
+        width:40%;
+    }
+}
