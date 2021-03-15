@@ -8,11 +8,167 @@ img {
 }
 
 body {
+  position: relative;
   background-color: #eee9e5;
+}
+
+div#aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  border: 1px solid blue;
+  background-color: #eee9e5;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  z-index: 2;
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
+}
+
+div#aside div.left {
+  width: 33%;
+  margin-left: 2%;
+  border: 1px solid blue;
+}
+
+div#aside div.left a {
+  cursor: pointer;
+}
+
+div#aside div.left a img#asideLogo {
+  width: 150px;
+  margin-top: 20%;
+  margin-bottom: 6%;
+}
+
+div#aside div.left ul.aside_kind li {
+  margin-bottom: 2%;
+}
+
+div#aside div.left ul.aside_kind li a {
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Noto sans Tc';
+  font-weight: 300;
+  font-size: 26px;
+}
+
+div#aside div.middle {
+  width: 33%;
+  margin-left: 2%;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: translateX(-60%);
+          transform: translateX(-60%);
+  opacity: 0;
+}
+
+div#aside div.middle ul.public_kind {
+  margin-top: 38%;
+}
+
+div#aside div.middle ul.public_kind li {
+  margin-bottom: 2%;
+}
+
+div#aside div.middle ul.public_kind li a {
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Noto sans Tc';
+  font-weight: 300;
+  font-size: 26px;
+}
+
+div#aside div.middle ul.kind01 {
+  display: none;
+}
+
+div#aside div.middle ul.kind02 {
+  display: none;
+}
+
+div#aside div.middle ul.kind03 {
+  display: none;
+}
+
+div#aside div.right {
+  width: 33%;
+}
+
+div#aside img#asideCancel {
+  width: 30px;
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  cursor: pointer;
 }
 
 div#background {
   position: relative;
+}
+
+div#background nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  width: 100%;
+}
+
+div#background nav ul {
+  width: 33%;
+  list-style: none;
+}
+
+div#background nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 2%;
+}
+
+div#background nav ul li :after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  border-bottom: 0px solid #333333;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+div#background nav ul li :hover:after {
+  width: 100%;
+  border-bottom: 1px solid #333333;
+}
+
+div#background nav ul li a {
+  position: relative;
+  font-size: 14px;
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Noto Sans Tc';
+  font-weight: 300;
+  z-index: 2;
+}
+
+div#background nav ul.right {
+  text-align: right;
+  margin-right: 3%;
+}
+
+div#background nav ul.right li {
+  margin-right: 3%;
 }
 
 div#background img {
