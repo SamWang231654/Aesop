@@ -7,7 +7,6 @@
         let nav_aside = document.querySelector('div#aside');
         if(e.target.nodeName === 'A'){
             e.preventDefault();
-            console.log('ul click',e.target);
             nav_aside.style.transform = `translateX(0%)`;
         }
 
@@ -16,22 +15,23 @@
             nav_aside.style.transform = `translateX(-100%)`;
         });
     };
-    //aside事件委派
-    let aside_ul = document.querySelector('.aside_kind');
-    aside_ul.addEventListener('click',asideHandler);
 
-    function asideHandler(e){
-        let div_middle = document.querySelector('div#aside > div.middle');
-        let ul_kind = document.querySelectorAll('div#aside > div.middle > ul');
-
-        if(e.target.nodeName === 'A'){
-            e.preventDefault();
-            console.log('123');
-            div_middle.style.transform = `translateX(0%)`;
-            div_middle.style.opacity = `1`;
-            ul_kind[0].style.display = `block`;
-        }
+    aside
+    let kind_li = document.querySelectorAll('.aside_kind li');
+    let publicKind = document.getElementsByClassName('public_kind');
+    for(let x = 0 ; x < kind_li.length; x++){
+        kind_li[x].addEventListener('mouseenter',function(){
+            for(let y = 0 ; y < publicKind.length ; y++){
+                publicKind[y].style.transform = `translateX(-10%)`;
+                // publicKind[y].style.display = `none`;
+                publicKind[y].classList.remove('mouseShow');
+            }
+            publicKind[x].classList.add('mouseShow');
+            publicKind[x].style.transform = `translateX(0%)`;
+            // publicKind[x].style.display = `block`;
+        });
     }
+    
 
 
     

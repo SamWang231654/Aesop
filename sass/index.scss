@@ -18,7 +18,7 @@ div#aside{
     height: 100vh;
     border:1px solid blue;
     background-color: rgb(238, 233, 229);
-    transform:translateX(-100%);
+    // transform:translateX(-100%);
     z-index: 2;
     transition:transform 1.5s;
     div.left{
@@ -29,13 +29,13 @@ div#aside{
             cursor:pointer;
             img#asideLogo{
                 width:150px;
-                margin-top:20%;
-                margin-bottom:6%;
+                margin-top:40%;
+                margin-bottom:8%;
             }
         }
         ul.aside_kind{
             li{
-                margin-bottom:2%;
+                margin-bottom:3%;
                 a{
                     text-decoration: none;
                     color:#333333;
@@ -49,12 +49,11 @@ div#aside{
     div.middle{
         width:33%;
         margin-left:2%;
-        // background-color: rgb(70, 59, 51);
-        transition: transform 1s;
-        transform:translateX(-60%);
-        opacity: 0;
         ul.public_kind{
-            margin-top:38%;
+            display:none;
+            margin-top:58%;
+            transition: transform 1.5s;
+            transform:translateX(-10%);
             li{
                 margin-bottom:2%;
                 a{
@@ -66,14 +65,11 @@ div#aside{
                 }
             }
         }
-        ul.kind01{
-            display:none;
+        ul.mouseShow{
+            display:block;
         }
-        ul.kind02{
-            display:none;
-        }
-        ul.kind03{
-            display:none;
+        ul.public_kind > li:nth-child(1){
+            margin-bottom: 7%;
         }
     }
     div.right{

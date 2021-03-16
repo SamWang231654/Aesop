@@ -22,8 +22,6 @@ div#aside {
   height: 100vh;
   border: 1px solid blue;
   background-color: #eee9e5;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
   z-index: 2;
   -webkit-transition: -webkit-transform 1.5s;
   transition: -webkit-transform 1.5s;
@@ -43,12 +41,12 @@ div#aside div.left a {
 
 div#aside div.left a img#asideLogo {
   width: 150px;
-  margin-top: 20%;
-  margin-bottom: 6%;
+  margin-top: 40%;
+  margin-bottom: 8%;
 }
 
 div#aside div.left ul.aside_kind li {
-  margin-bottom: 2%;
+  margin-bottom: 3%;
 }
 
 div#aside div.left ul.aside_kind li a {
@@ -62,17 +60,17 @@ div#aside div.left ul.aside_kind li a {
 div#aside div.middle {
   width: 33%;
   margin-left: 2%;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  -webkit-transform: translateX(-60%);
-          transform: translateX(-60%);
-  opacity: 0;
 }
 
 div#aside div.middle ul.public_kind {
-  margin-top: 38%;
+  display: none;
+  margin-top: 58%;
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
 }
 
 div#aside div.middle ul.public_kind li {
@@ -87,16 +85,12 @@ div#aside div.middle ul.public_kind li a {
   font-size: 26px;
 }
 
-div#aside div.middle ul.kind01 {
-  display: none;
+div#aside div.middle ul.mouseShow {
+  display: block;
 }
 
-div#aside div.middle ul.kind02 {
-  display: none;
-}
-
-div#aside div.middle ul.kind03 {
-  display: none;
+div#aside div.middle ul.public_kind > li:nth-child(1) {
+  margin-bottom: 7%;
 }
 
 div#aside div.right {
