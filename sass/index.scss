@@ -18,7 +18,7 @@ div#aside{
     height: 100vh;
     border:1px solid blue;
     background-color: rgb(238, 233, 229);
-    // transform:translateX(-100%);
+    transform:translateX(-100%);
     z-index: 2;
     transition:transform 1.5s;
     div.left{
@@ -67,6 +67,7 @@ div#aside{
         }
         ul.mouseShow{
             display:block;
+            transform:translateX(-10%);
         }
         ul.public_kind > li:nth-child(1){
             margin-bottom: 7%;

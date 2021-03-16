@@ -22,6 +22,8 @@ div#aside {
   height: 100vh;
   border: 1px solid blue;
   background-color: #eee9e5;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   z-index: 2;
   -webkit-transition: -webkit-transform 1.5s;
   transition: -webkit-transform 1.5s;
@@ -87,6 +89,8 @@ div#aside div.middle ul.public_kind li a {
 
 div#aside div.middle ul.mouseShow {
   display: block;
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
 }
 
 div#aside div.middle ul.public_kind > li:nth-child(1) {
