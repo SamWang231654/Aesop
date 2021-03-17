@@ -28,11 +28,16 @@ div#aside{
         border:1px solid blue;
         a{
             cursor:pointer;
-            img#asideLogo{
-                width:150px;
-                margin-top:40%;
-                margin-bottom:8%;
-            }
+            text-decoration: none;
+            h1#asideLogo{
+                        color:#333333;
+                        font-family: 'Noto Sans TC';
+                        font-weight: 400;
+                        margin-top:35%;
+                        margin-bottom:15%;
+                        margin-left:2%;
+                        font-size: 32px;
+                    }
         }
         ul.aside_kind{
             li{
@@ -138,17 +143,25 @@ div#background{
         height: 650px;
     }
 }
+//section01
 div#section01{
     position: absolute;
     width:100%;
-    top:25%;
+    top:10%;
     display:flex;
     div.left{
         width:25%;
-        img#logo{
-            margin-left:5%;
-            width:200px;
+        a{
+            text-decoration: none;
+            h1#logo{
+                color:#333333;
+                font-family: 'Noto Sans TC';
+                font-weight: 400;
+                margin-left:8%;
+                font-size: 32px;
+            }
         }
+        
     }
     div.middle{
         width:35%;
@@ -245,6 +258,104 @@ div#section02{
             text-align:center;
             margin-bottom: 5%;
             
+        }
+    }
+}
+//section03
+div#section03{
+    margin-top:5%;
+    div.section03Container{
+        display:flex;
+        width:100%;
+        margin-bottom:500px;
+        div.left{
+            width:50%;
+            background-image: url('../img/index/Aesop_Tame1.jpg');
+            background-repeat: no-repeat;
+            background-size: 300%;
+            background-position: bottom center;
+            transition:opacity,1s;
+            opacity: 0;
+            h2{
+                font-size: 30px;
+                font-family: 'Noto Sans TC';
+                font-weight: 300;
+                color:#FFFEF2;
+                text-align:center;
+                margin-bottom:5%;
+                margin-top:15%;
+            }
+            h3{
+                font-size: 16px;
+                font-family: 'Noto Sans TC';
+                font-weight: 300;
+                color:#FFFEF2;
+                text-align:center;
+                margin-bottom:5%;
+            }
+            P{
+                font-size: 14px;
+                font-family: 'Noto Sans TC';
+                font-weight: 300;
+                color:#FFFEF2;
+                text-align:center;
+                margin-bottom:5%;
+            }
+            a{
+                display:block;
+                font-size: 16px;
+                font-family: 'Noto Sans TC';
+                font-weight: 300;
+                color:#FFFEF2;
+                text-align:center;
+                margin-bottom:55%;
+            }
+        }
+        div.right{
+            width:50%;
+            background-image: url('../img/index/Aesop_Tame.jpg');
+            background-repeat: no-repeat;
+            background-size: 300%;
+            background-position: bottom center;
+            transition:opacity,1s;
+            opacity: 0;
+            h2{
+                font-size: 30px;
+                font-family: 'Noto Sans TC';
+                font-weight: 300;
+                color:#FFFEF2;
+                text-align:center;
+                margin-bottom:5%;
+                margin-top:15%;
+            }
+            h3{
+                font-size: 16px;
+                font-family: 'Noto Sans TC';
+                font-weight: 300;
+                color:#FFFEF2;
+                text-align:center;
+                margin-bottom:5%;
+            }
+            P{
+                font-size: 14px;
+                font-family: 'Noto Sans TC';
+                font-weight: 300;
+                color:#FFFEF2;
+                text-align:center;
+                margin-bottom:5%;
+            }
+            a{
+                display:block;
+                font-size: 16px;
+                font-family: 'Noto Sans TC';
+                font-weight: 300;
+                color:#FFFEF2;
+                text-align:center;
+                margin-bottom:55%;
+            }
+        }
+        div.s03Active{
+            opacity: 1;
         }
     }
 }

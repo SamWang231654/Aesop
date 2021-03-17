@@ -39,12 +39,17 @@ div#aside div.left {
 
 div#aside div.left a {
   cursor: pointer;
+  text-decoration: none;
 }
 
-div#aside div.left a img#asideLogo {
-  width: 150px;
-  margin-top: 40%;
-  margin-bottom: 8%;
+div#aside div.left a h1#asideLogo {
+  color: #333333;
+  font-family: 'Noto Sans TC';
+  font-weight: 400;
+  margin-top: 35%;
+  margin-bottom: 15%;
+  margin-left: 2%;
+  font-size: 32px;
 }
 
 div#aside div.left ul.aside_kind li {
@@ -176,7 +181,7 @@ div#background img {
 div#section01 {
   position: absolute;
   width: 100%;
-  top: 25%;
+  top: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,9 +191,16 @@ div#section01 div.left {
   width: 25%;
 }
 
-div#section01 div.left img#logo {
-  margin-left: 5%;
-  width: 200px;
+div#section01 div.left a {
+  text-decoration: none;
+}
+
+div#section01 div.left a h1#logo {
+  color: #333333;
+  font-family: 'Noto Sans TC';
+  font-weight: 400;
+  margin-left: 8%;
+  font-size: 32px;
 }
 
 div#section01 div.middle {
@@ -308,5 +320,119 @@ div#section02 .section02_product h1.section02_title {
   color: #333333;
   text-align: center;
   margin-bottom: 5%;
+}
+
+div#section03 {
+  margin-top: 5%;
+}
+
+div#section03 div.section03Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 500px;
+}
+
+div#section03 div.section03Container div.left {
+  width: 50%;
+  background-image: url("../img/index/Aesop_Tame1.jpg");
+  background-repeat: no-repeat;
+  background-size: 300%;
+  background-position: bottom center;
+  -webkit-transition: opacity,1s;
+  transition: opacity,1s;
+  opacity: 0;
+}
+
+div#section03 div.section03Container div.left h2 {
+  font-size: 30px;
+  font-family: 'Noto Sans TC';
+  font-weight: 300;
+  color: #FFFEF2;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 15%;
+}
+
+div#section03 div.section03Container div.left h3 {
+  font-size: 16px;
+  font-family: 'Noto Sans TC';
+  font-weight: 300;
+  color: #FFFEF2;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+div#section03 div.section03Container div.left P {
+  font-size: 14px;
+  font-family: 'Noto Sans TC';
+  font-weight: 300;
+  color: #FFFEF2;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+div#section03 div.section03Container div.left a {
+  display: block;
+  font-size: 16px;
+  font-family: 'Noto Sans TC';
+  font-weight: 300;
+  color: #FFFEF2;
+  text-align: center;
+  margin-bottom: 55%;
+}
+
+div#section03 div.section03Container div.right {
+  width: 50%;
+  background-image: url("../img/index/Aesop_Tame.jpg");
+  background-repeat: no-repeat;
+  background-size: 300%;
+  background-position: bottom center;
+  -webkit-transition: opacity,1s;
+  transition: opacity,1s;
+  opacity: 0;
+}
+
+div#section03 div.section03Container div.right h2 {
+  font-size: 30px;
+  font-family: 'Noto Sans TC';
+  font-weight: 300;
+  color: #FFFEF2;
+  text-align: center;
+  margin-bottom: 5%;
+  margin-top: 15%;
+}
+
+div#section03 div.section03Container div.right h3 {
+  font-size: 16px;
+  font-family: 'Noto Sans TC';
+  font-weight: 300;
+  color: #FFFEF2;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+div#section03 div.section03Container div.right P {
+  font-size: 14px;
+  font-family: 'Noto Sans TC';
+  font-weight: 300;
+  color: #FFFEF2;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+div#section03 div.section03Container div.right a {
+  display: block;
+  font-size: 16px;
+  font-family: 'Noto Sans TC';
+  font-weight: 300;
+  color: #FFFEF2;
+  text-align: center;
+  margin-bottom: 55%;
+}
+
+div#section03 div.section03Container div.s03Active {
+  opacity: 1;
 }
 /*# sourceMappingURL=index.css.map */
