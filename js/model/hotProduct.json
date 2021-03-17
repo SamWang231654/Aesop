@@ -1,21 +1,21 @@
 [
     {
-        "img":"./img/Aesop_Hand.jpg",
+        "img":"./img/index/Aesop_Hand.jpg",
         "title":"賦活手部乾洗噴霧",
         "describe":"清爽的手部乾洗噴霧"
     },
     {
-        "img":"./img/Aesop-Hand1.jpg",
+        "img":"./img/index/Aesop-Hair-Tame.jpg",
         "title":"賦活手部乾洗清潔露",
         "describe":"以酒精為主要成分，含有柑橘配方"
     },
     {
-        "img":"./img/Aesop-Kits.jpg",
+        "img":"./img/index/Aesop-Kits.jpg",
         "title":"賦活手部清潔二重奏",
         "describe":"溫和而不乾燥的二重奏組合"
     },
     {
-        "img":"./img/Aesop-Reverence.jpg",
+        "img":"./img/index/Aesop-Reverence.jpg",
         "title":"尊尚手部護理二重奏",
         "describe":"呵護雙手的優質二件組"
     }
