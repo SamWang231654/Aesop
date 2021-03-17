@@ -34,14 +34,14 @@
     }
     
 
-
+    //section02 ajax load
     function getAjax(sam,dom){
         let src, text, des;
         let arr = [];
         $.ajax({
             url:sam,
             dataType:'json'
-        }).done((arr)=>{
+        }).done((res)=>{
             arr = res
         }).then(()=>{
             for(let i=0; i < arr.length; i++){
@@ -49,15 +49,15 @@
                 text = arr[i].title;
                 des = arr[i].describe;
                 let template = `
-                <div class="product">
-                    <img src="${src}" alt="arr">
-                    <h1 class="title">${text}</h1>
-                    <h1 class="title">${des}</h1>
+                <div class="section02_product">
+                    <a href="#"><img src="${src}" alt="arr"></a>
+                    <a href="#"><h1 class="section02_title">${text}</h1></a>
+                    <h1 class="section02_title">${des}</h1>
                 </div>
                 `;
                 $(`${dom}`).append(template)
             }
         });
     }
-    getAjax('hotProduct.json','#section02');
+    getAjax('./js/model/hotProduct.json','#section02');
 })();

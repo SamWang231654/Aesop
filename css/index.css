@@ -9,7 +9,7 @@ img {
 
 body {
   position: relative;
-  background-color: #eee9e5;
+  background-color: #fffff1;
 }
 
 div#aside {
@@ -102,7 +102,7 @@ div#aside div.right {
 }
 
 div#aside img#asideCancel {
-  width: 30px;
+  width: 20px;
   position: absolute;
   right: 5%;
   top: 10%;
@@ -260,5 +260,53 @@ div#section01 div.middle a button img {
 
 div#section01 div.right {
   width: 40%;
+}
+
+div#section02 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5%;
+}
+
+div#section02 .section02_product {
+  width: 25%;
+}
+
+div#section02 .section02_product a {
+  text-decoration: none;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+div#section02 .section02_product a :after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 35%;
+  width: 0%;
+  border-bottom: 0px solid #333333;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+div#section02 .section02_product a :hover:after {
+  width: 30%;
+  border-bottom: 1px solid #333333;
+}
+
+div#section02 .section02_product img {
+  height: 400px;
+}
+
+div#section02 .section02_product h1.section02_title {
+  position: relative;
+  font-size: 14px;
+  font-family: 'Noto Sans TC';
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 5%;
 }
 /*# sourceMappingURL=index.css.map */
