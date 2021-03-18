@@ -1,0 +1,27 @@
+[
+    {
+        "img":"./img/index/Aesop-Hair-Shine.jpg",
+        "title":"亮澤鬍鬚保養油",
+        "describe":"提升秀髮光澤，不留油膩殘餘"
+    },
+    {
+        "img":"./img/index/Aesop_Hair_Rose_Hai.jpg",
+        "title":"玫瑰滋潤護髮膜",
+        "describe":"保持頭皮和秀髮最佳狀態"
+    },
+    {
+        "img":"./img/index/Aesop-Hair.jpg",
+        "title":"紫羅蘭護髮造型霜",
+        "describe":"質地細膩的造型調理霜"
+    },
+    {
+        "img":"./img/index/Aesop-Hair-Classic.jpg",
+        "title":"經典洗髮露",
+        "describe":"溫和且有效的洗髮產品"
+    },
+    {
+        "img":"./img/index/Aesop-Hair-Classic1.jpg",
+        "title":"經典潤髮乳",
+        "describe":"輕盈滋養呵護"
+    }
+]
