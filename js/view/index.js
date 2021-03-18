@@ -47,10 +47,10 @@
                 text = arr[i].title;
                 des = arr[i].describe;
                 let template = `
-                <div class="section02_product">
+                <div class="section_product">
                     <a href="#"><img src="${src}" alt="arr"></a>
-                    <a href="#"><h1 class="section02_title">${text}</h1></a>
-                    <h1 class="section02_title">${des}</h1>
+                    <a href="#"><h1 class="section_title">${text}</h1></a>
+                    <h1 class="section_title">${des}</h1>
                 </div>
                 `;
                 $(`${dom}`).append(template)
@@ -73,5 +73,7 @@
         }
     }
     window.addEventListener('scroll',scrollHandler);
+    //section04
+    getAjax('./js/model/slider.json','.section04Container');
 })();
     

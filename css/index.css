@@ -281,18 +281,18 @@ div#section02 {
   margin-top: 5%;
 }
 
-div#section02 .section02_product {
+div#section02 .section_product {
   width: 25%;
 }
 
-div#section02 .section02_product a {
+div#section02 .section_product a {
   text-decoration: none;
   position: relative;
   display: block;
   margin: 0 auto;
 }
 
-div#section02 .section02_product a :after {
+div#section02 .section_product a :after {
   content: '';
   position: absolute;
   bottom: -2px;
@@ -303,16 +303,16 @@ div#section02 .section02_product a :after {
   transition: all .5s;
 }
 
-div#section02 .section02_product a :hover:after {
+div#section02 .section_product a :hover:after {
   width: 30%;
   border-bottom: 1px solid #333333;
 }
 
-div#section02 .section02_product img {
+div#section02 .section_product img {
   height: 400px;
 }
 
-div#section02 .section02_product h1.section02_title {
+div#section02 .section_product h1.section_title {
   position: relative;
   font-size: 14px;
   font-family: 'Noto Sans TC';
@@ -331,7 +331,6 @@ div#section03 div.section03Container {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  margin-bottom: 500px;
 }
 
 div#section03 div.section03Container div.left {
@@ -434,5 +433,61 @@ div#section03 div.section03Container div.right a {
 
 div#section03 div.section03Container div.s03Active {
   opacity: 1;
+}
+
+div#section04 {
+  margin-top: 5%;
+}
+
+div#section04 div.section04Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+div#section04 div.section04Container .section_product {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 25%;
+}
+
+div#section04 div.section04Container .section_product a {
+  text-decoration: none;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+div#section04 div.section04Container .section_product a :after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 35%;
+  width: 0%;
+  border-bottom: 0px solid #333333;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+div#section04 div.section04Container .section_product a :hover:after {
+  width: 30%;
+  border-bottom: 1px solid #333333;
+}
+
+div#section04 div.section04Container .section_product img {
+  height: 20%;
+}
+
+div#section04 div.section04Container .section_product h1.section_title {
+  position: relative;
+  font-size: 14px;
+  font-family: 'Noto Sans TC';
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 5%;
 }
 /*# sourceMappingURL=index.css.map */

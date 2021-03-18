@@ -222,7 +222,7 @@ div#section01{
 div#section02{
     display:flex;
     margin-top:5%;
-    .section02_product{
+    .section_product{
         // border:1px solid rgb(97, 72, 72);
         width:25%;
         a{
@@ -249,7 +249,7 @@ div#section02{
             // border:1px solid blue;
             height: 400px;
         }
-        h1.section02_title{
+        h1.section_title{
             position: relative;
             font-size: 14px;
             font-family: 'Noto Sans TC';
@@ -267,7 +267,6 @@ div#section03{
     div.section03Container{
         display:flex;
         width:100%;
-        margin-bottom:500px;
         div.left{
             width:50%;
             background-image: url('../img/index/Aesop_Tame1.jpg');
@@ -359,3 +358,55 @@ div#section03{
         }
     }
 }
+//section04
+div#section04{
+    margin-top:5%;
+    div.section04Container{
+        display:flex;
+        width:90%;
+        margin:0 auto;
+        border:1px solid red;
+        .section_product{
+            // border:1px solid rgb(97, 72, 72);
+            flex-shrink: 0;
+            width:25%;
+            a{
+                text-decoration: none;
+                position: relative;
+                // border:1px solid red;
+                display:block;
+                margin: 0 auto;
+                :after{
+                    content:'';
+                    position: absolute;
+                    bottom:-2px;
+                    left:35%;
+                    width:0%;
+                    border-bottom:0px solid #333333;
+                    transition:all .5s;
+                }
+                :hover:after {
+                    width:30%;
+                    border-bottom:1px solid #333333;
+                }
+            }
+            img{
+                // border:1px solid blue;
+                height: 20%;
+            }
+            h1.section_title{
+                position: relative;
+                font-size: 14px;
+                font-family: 'Noto Sans TC';
+                font-weight: 400;
+                color:#333333;
+                text-align:center;
+                margin-bottom: 5%;
+                
+            }
+        }
+    }
+}
+
+
+
