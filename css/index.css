@@ -438,7 +438,6 @@ div#section03 div.section03Container div.s03Active {
 
 div#section04 {
   margin-top: 5%;
-  border: 1px solid purple;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,6 +447,7 @@ div#section04 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 div#section04 button#leftArrow {
@@ -457,6 +457,13 @@ div#section04 button#leftArrow {
   height: 80px;
   cursor: pointer;
   background-color: #333333;
+  z-index: 3;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: translateX(-101%);
+          transform: translateX(-101%);
 }
 
 div#section04 button#leftArrow span#arrow1 {
@@ -488,6 +495,13 @@ div#section04 button#rightArrow {
   width: 80px;
   height: 80px;
   background-color: #333333;
+  z-index: 3;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transform: translateX(101%);
+          transform: translateX(101%);
 }
 
 div#section04 button#rightArrow span#arrow3 {
@@ -518,10 +532,13 @@ div#section04 div.section04Container {
   display: flex;
   width: 90%;
   margin: 0 auto;
-  border: 1px solid red;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
 }
 
 div#section04 div.section04Container .section_product {
@@ -565,5 +582,132 @@ div#section04 div.section04Container .section_product h1.section_title {
   color: #333333;
   text-align: center;
   margin-bottom: 5%;
+}
+
+div.progressBar {
+  background-color: #ccc;
+  height: 2px;
+  width: 90%;
+  margin: 1% auto 0;
+}
+
+div.progressBar span.smallBar {
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: #333333;
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
+}
+
+div#section05 {
+  margin-top: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div#section05 div.left {
+  width: 42%;
+  padding: 0% 8% 0% 5%;
+}
+
+div#section05 div.left h2 {
+  font-size: 30px;
+  font-family: 'Noto Sans TC';
+  font-weight: 300;
+  color: #333333;
+  margin-bottom: 5%;
+}
+
+div#section05 div.left p {
+  font-size: 16px;
+  font-family: 'Noto Sans TC';
+  font-weight: 300;
+  color: #333333;
+  margin-bottom: 5%;
+  line-height: 2;
+}
+
+div#section05 div.left a {
+  cursor: pointer;
+}
+
+div#section05 div.left a :hover {
+  background-color: #333333;
+}
+
+div#section05 div.left a :hover span {
+  color: #fffff1;
+}
+
+div#section05 div.left a button {
+  outline: none;
+  background: none;
+  border: 1px solid #cacaca;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 60px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+div#section05 div.left a button span {
+  font-size: 14px;
+  font-family: 'Noto Sans TC';
+  font-weight: 300;
+  color: #333333;
+  margin-left: 8%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+div#section05 div.left a button img {
+  width: 15px;
+  margin-right: 2%;
+}
+
+div#section05 div.right {
+  width: 58%;
+}
+
+div#section05 div.right div.carouselContainer {
+  overflow: hidden;
+}
+
+div#section05 div.right div.carouselContainer div.carouselSlider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+div#section05 div.right div.s5_progressBar {
+  background-color: #ccc;
+  height: 2px;
+  width: 100%;
+  margin: 5% auto 5%;
+}
+
+div#section05 div.right div.s5_progressBar span.smallBar {
+  display: block;
+  width: 33.3%;
+  height: 2px;
+  background-color: #333333;
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
 }
 /*# sourceMappingURL=index.css.map */
