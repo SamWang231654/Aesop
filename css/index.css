@@ -237,6 +237,7 @@ div#section01 div.middle a :hover span {
 }
 
 div#section01 div.middle a button {
+  outline: none;
   background: none;
   border: 1px solid #888888;
   cursor: pointer;
@@ -437,6 +438,78 @@ div#section03 div.section03Container div.s03Active {
 
 div#section04 {
   margin-top: 5%;
+  border: 1px solid purple;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div#section04 button#leftArrow {
+  outline: none;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  background-color: #333333;
+}
+
+div#section04 button#leftArrow span#arrow1 {
+  position: absolute;
+  left: 40%;
+  width: 20px;
+  border: 1px solid #FFFEF2;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotate(-16deg);
+          transform: rotate(-16deg);
+}
+
+div#section04 button#leftArrow span#arrow2 {
+  position: absolute;
+  left: 40%;
+  width: 20px;
+  border: 1px solid #FFFEF2;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotate(16deg);
+          transform: rotate(16deg);
+}
+
+div#section04 button#rightArrow {
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background-color: #333333;
+}
+
+div#section04 button#rightArrow span#arrow3 {
+  position: absolute;
+  left: 40%;
+  width: 20px;
+  border: 1px solid #FFFEF2;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: rotate(-16deg);
+          transform: rotate(-16deg);
+}
+
+div#section04 button#rightArrow span#arrow4 {
+  position: absolute;
+  left: 40%;
+  width: 20px;
+  border: 1px solid #FFFEF2;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: rotate(16deg);
+          transform: rotate(16deg);
 }
 
 div#section04 div.section04Container {
@@ -446,6 +519,9 @@ div#section04 div.section04Container {
   width: 90%;
   margin: 0 auto;
   border: 1px solid red;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 div#section04 div.section04Container .section_product {
