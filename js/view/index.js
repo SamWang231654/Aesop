@@ -74,6 +74,30 @@
     }
     window.addEventListener('scroll',scrollHandler);
     //section04
+    //渲染SLIDER產品至畫面上
     getAjax('./js/model/slider.json','.section04Container');
+
+    let leftButton = document.querySelector('#leftArrow');
+    let rightButton = document.querySelector('#rightArrow');
+    let sliderContainer = document.querySelector('.section04Container');
+    let imgWidth;
+    function sliderHandler(e){
+        if(e.target.nodeName === 'DIV'){
+            let sliderProduct = document.querySelectorAll('.section04Container > .section_product');
+            imgWidth = sliderProduct[1].clientWidth;
+        }
+    }
+    function leftMoveHandler(){
+        console.log(imgWidth);
+
+    };
+    function rightMoveHandler(){
+
+    };
+
+
+    sliderContainer.addEventListener('mouseenter',sliderHandler);
+    leftButton.addEventListener('click',leftMoveHandler);
+    rightButton.addEventListener('click',rightMoveHandler);
 })();
     

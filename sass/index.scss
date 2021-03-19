@@ -190,6 +190,7 @@ div#section01{
 
             }
             button{
+                outline: none;
                 background: none;
                 border:1px solid rgb(136, 136, 136);
                 cursor:pointer;
@@ -361,11 +362,64 @@ div#section03{
 //section04
 div#section04{
     margin-top:5%;
+    border:1px solid purple;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    button#leftArrow{
+        outline: none;
+        position: relative;
+        width:80px;
+        height:80px;
+        cursor:pointer;
+        background-color: #333333;
+        span#arrow1{
+            position: absolute;
+            left:40%;
+            width:20px;
+            border:1px solid #FFFEF2;
+            transform-origin: left;
+            transform:rotate(-16deg);
+        }
+        span#arrow2{
+            position: absolute;
+            left:40%;
+            width:20px;
+            border:1px solid #FFFEF2;
+            transform-origin: left;
+            transform:rotate(16deg);
+        }
+    }
+    button#rightArrow{
+        cursor:pointer;
+        outline: none;
+        position: relative;
+        width:80px;
+        height:80px;
+        background-color: #333333;
+        span#arrow3{
+            position: absolute;
+            left:40%;
+            width:20px;
+            border:1px solid #FFFEF2;
+            transform-origin: right;
+            transform:rotate(-16deg);
+        }
+        span#arrow4{
+            position: absolute;
+            left:40%;
+            width:20px;
+            border:1px solid #FFFEF2;
+            transform-origin: right;
+            transform:rotate(16deg);
+        }
+    }
     div.section04Container{
         display:flex;
         width:90%;
         margin:0 auto;
         border:1px solid red;
+        align-items: flex-end;
         .section_product{
             // border:1px solid rgb(97, 72, 72);
             flex-shrink: 0;
