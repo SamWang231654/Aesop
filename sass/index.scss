@@ -18,7 +18,7 @@ div#aside{
     width:100%;
     height: 100vh;
     border:1px solid blue;
-    background-color: rgb(238, 233, 229);
+    background-color: rgb(255, 255, 241);
     transform:translateX(-100%);
     z-index: 2;
     transition:transform 1.5s;
@@ -147,7 +147,7 @@ div#background{
 div#section01{
     position: absolute;
     width:100%;
-    top:10%;
+    top:7%;
     display:flex;
     div.left{
         width:25%;
