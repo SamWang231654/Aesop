@@ -216,7 +216,7 @@ sliderBox.addEventListener('transitionend', () => {
     };
 });
 
-
+    //計時器
     setInterval(leftmove, 5000);
 // })();
 
