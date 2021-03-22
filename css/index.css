@@ -1,6 +1,5 @@
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
@@ -13,8 +12,6 @@ body {
 }
 
 div#aside {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   left: 0;
@@ -22,13 +19,9 @@ div#aside {
   height: 100vh;
   border: 1px solid blue;
   background-color: #fffff1;
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+  transform: translateX(-100%);
   z-index: 2;
-  -webkit-transition: -webkit-transform 1.5s;
-  transition: -webkit-transform 1.5s;
   transition: transform 1.5s;
-  transition: transform 1.5s, -webkit-transform 1.5s;
 }
 
 div#aside div.left {
@@ -72,16 +65,13 @@ div#aside div.middle {
 div#aside div.middle ul.public_kind {
   display: none;
   margin-top: 58%;
-  -webkit-transition: -webkit-transform 1.5s;
-  transition: -webkit-transform 1.5s;
   transition: transform 1.5s;
-  transition: transform 1.5s, -webkit-transform 1.5s;
-  -webkit-transform: translateX(-10%);
-          transform: translateX(-10%);
+  transform: translateX(-10%);
 }
 
 div#aside div.middle ul.public_kind li {
   margin-bottom: 2%;
+  opacity: 0;
 }
 
 div#aside div.middle ul.public_kind li a {
@@ -94,8 +84,7 @@ div#aside div.middle ul.public_kind li a {
 
 div#aside div.middle ul.mouseShow {
   display: block;
-  -webkit-transform: translateX(-10%);
-          transform: translateX(-10%);
+  transform: translateX(-10%);
 }
 
 div#aside div.middle ul.public_kind > li:nth-child(1) {
@@ -119,8 +108,6 @@ div#background {
 }
 
 div#background nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   top: 5%;
@@ -146,7 +133,6 @@ div#background nav ul li :after {
   left: 0;
   width: 0%;
   border-bottom: 0px solid #333333;
-  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
@@ -182,8 +168,6 @@ div#section01 {
   position: absolute;
   width: 100%;
   top: 7%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -241,18 +225,11 @@ div#section01 div.middle a button {
   background: none;
   border: 1px solid #888888;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 300px;
   height: 60px;
-  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
@@ -262,7 +239,6 @@ div#section01 div.middle a button span {
   font-weight: 400;
   color: #333333;
   margin-left: 8%;
-  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
@@ -276,8 +252,6 @@ div#section01 div.right {
 }
 
 div#section02 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 5%;
 }
@@ -300,7 +274,6 @@ div#section02 .section_product a :after {
   left: 35%;
   width: 0%;
   border-bottom: 0px solid #333333;
-  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
@@ -328,8 +301,6 @@ div#section03 {
 }
 
 div#section03 div.section03Container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
@@ -340,7 +311,6 @@ div#section03 div.section03Container div.left {
   background-repeat: no-repeat;
   background-size: 300%;
   background-position: bottom center;
-  -webkit-transition: opacity,1s;
   transition: opacity,1s;
   opacity: 0;
 }
@@ -389,7 +359,6 @@ div#section03 div.section03Container div.right {
   background-repeat: no-repeat;
   background-size: 300%;
   background-position: bottom center;
-  -webkit-transition: opacity,1s;
   transition: opacity,1s;
   opacity: 0;
 }
@@ -438,15 +407,9 @@ div#section03 div.section03Container div.s03Active {
 
 div#section04 {
   margin-top: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -458,12 +421,8 @@ div#section04 button#leftArrow {
   cursor: pointer;
   background-color: #333333;
   z-index: 3;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
   transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  -webkit-transform: translateX(-101%);
-          transform: translateX(-101%);
+  transform: translateX(-101%);
 }
 
 div#section04 button#leftArrow span#arrow1 {
@@ -471,10 +430,8 @@ div#section04 button#leftArrow span#arrow1 {
   left: 40%;
   width: 20px;
   border: 1px solid #FFFEF2;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: rotate(-16deg);
-          transform: rotate(-16deg);
+  transform-origin: left;
+  transform: rotate(-16deg);
 }
 
 div#section04 button#leftArrow span#arrow2 {
@@ -482,10 +439,8 @@ div#section04 button#leftArrow span#arrow2 {
   left: 40%;
   width: 20px;
   border: 1px solid #FFFEF2;
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transform: rotate(16deg);
-          transform: rotate(16deg);
+  transform-origin: left;
+  transform: rotate(16deg);
 }
 
 div#section04 button#rightArrow {
@@ -496,12 +451,8 @@ div#section04 button#rightArrow {
   height: 80px;
   background-color: #333333;
   z-index: 3;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
   transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
-  -webkit-transform: translateX(101%);
-          transform: translateX(101%);
+  transform: translateX(101%);
 }
 
 div#section04 button#rightArrow span#arrow3 {
@@ -509,10 +460,8 @@ div#section04 button#rightArrow span#arrow3 {
   left: 40%;
   width: 20px;
   border: 1px solid #FFFEF2;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-transform: rotate(-16deg);
-          transform: rotate(-16deg);
+  transform-origin: right;
+  transform: rotate(-16deg);
 }
 
 div#section04 button#rightArrow span#arrow4 {
@@ -520,30 +469,20 @@ div#section04 button#rightArrow span#arrow4 {
   left: 40%;
   width: 20px;
   border: 1px solid #FFFEF2;
-  -webkit-transform-origin: right;
-          transform-origin: right;
-  -webkit-transform: rotate(16deg);
-          transform: rotate(16deg);
+  transform-origin: right;
+  transform: rotate(16deg);
 }
 
 div#section04 div.section04Container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 90%;
   margin: 0 auto;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-transition: -webkit-transform .5s;
-  transition: -webkit-transform .5s;
+  align-items: flex-end;
   transition: transform .5s;
-  transition: transform .5s, -webkit-transform .5s;
 }
 
 div#section04 div.section04Container .section_product {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   width: 25%;
 }
 
@@ -561,7 +500,6 @@ div#section04 div.section04Container .section_product a :after {
   left: 35%;
   width: 0%;
   border-bottom: 0px solid #333333;
-  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
@@ -596,16 +534,11 @@ div.progressBar span.smallBar {
   width: 50%;
   height: 2px;
   background-color: #333333;
-  -webkit-transition: -webkit-transform 1.5s;
-  transition: -webkit-transform 1.5s;
   transition: transform 1.5s;
-  transition: transform 1.5s, -webkit-transform 1.5s;
 }
 
 div#section05 {
   margin-top: 15%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -648,18 +581,11 @@ div#section05 div.left a button {
   background: none;
   border: 1px solid #cacaca;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 300px;
   height: 60px;
-  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
@@ -669,7 +595,6 @@ div#section05 div.left a button span {
   font-weight: 300;
   color: #333333;
   margin-left: 8%;
-  -webkit-transition: all .5s;
   transition: all .5s;
 }
 
@@ -687,8 +612,6 @@ div#section05 div.right div.carouselContainer {
 }
 
 div#section05 div.right div.carouselContainer div.carouselSlider {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
@@ -705,10 +628,7 @@ div#section05 div.right div.s5_progressBar span.smallBar {
   width: 33.3%;
   height: 2px;
   background-color: #333333;
-  -webkit-transition: -webkit-transform 1.5s;
-  transition: -webkit-transform 1.5s;
   transition: transform 1.5s;
-  transition: transform 1.5s, -webkit-transform 1.5s;
 }
 
 div#section05 div.right div.storeName h2 {
