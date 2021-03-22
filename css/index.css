@@ -84,7 +84,6 @@ div#aside div.middle ul.public_kind li a {
 
 div#aside div.middle ul.mouseShow {
   display: block;
-  transform: translateX(-10%);
 }
 
 div#aside div.middle ul.public_kind > li:nth-child(1) {
