@@ -134,8 +134,8 @@ rightButton.addEventListener('click', rightMoveHandler);
 //section 05    slider
 const sliderBox = document.querySelector('.carouselSlider');
 const slider = document.querySelectorAll('.carouselSlider img');
-const leftBtn = document.querySelector('#s05left');
-const rightBtn = document.querySelector('#s05right');
+// const leftBtn = document.querySelector('#s05left');
+// const rightBtn = document.querySelector('#s05right');
 const s05smallBar = document.querySelector('div.s5_progressBar > span.smallBar');
 const storeAddress = document.querySelectorAll('div.storeName > h2');
 
@@ -171,36 +171,36 @@ function leftmove() {
     storeAddress[storeNumber2].classList.remove('store');
 };
 //Button Listeners
-rightBtn.addEventListener('click', () => {
-    if (counter >= slider.length - 1) return;
-    sliderBox.style.transition = "transform 0.5s ease-in-out";
-    counter++;
-    sliderBox.style.transform = 'translateX(' + (-size * counter) + 'px)';
-    // sliderBox.style.transform = `translateX(${-size * counter}px)`;
-    if (barCounter >= 2) {
-        s05smallBar.style.transform = `translateX(0px)`;
-        barCounter = -1;
-    }
-    barCounter++;
-    s05smallBar.style.transform = `translateX(${barSize * barCounter}px)`;
-    if(storeNumber >= 2){
-        storeNumber = -1;
-    }
-    if(storeNumber2 >= 2){
-        storeNumber2 = -1;
-    }
-    storeNumber++;
-    storeNumber2++;
-    storeAddress[storeNumber].classList.add('store');
-    storeAddress[storeNumber2].classList.remove('store');
-});
+// rightBtn.addEventListener('click', () => {
+//     if (counter >= slider.length - 1) return;
+//     sliderBox.style.transition = "transform 0.5s ease-in-out";
+//     counter++;
+//     sliderBox.style.transform = 'translateX(' + (-size * counter) + 'px)';
+//     // sliderBox.style.transform = `translateX(${-size * counter}px)`;
+//     if (barCounter >= 2) {
+//         s05smallBar.style.transform = `translateX(0px)`;
+//         barCounter = -1;
+//     }
+//     barCounter++;
+//     s05smallBar.style.transform = `translateX(${barSize * barCounter}px)`;
+//     if(storeNumber >= 2){
+//         storeNumber = -1;
+//     }
+//     if(storeNumber2 >= 2){
+//         storeNumber2 = -1;
+//     }
+//     storeNumber++;
+//     storeNumber2++;
+//     storeAddress[storeNumber].classList.add('store');
+//     storeAddress[storeNumber2].classList.remove('store');
+// });
 
-leftBtn.addEventListener('click', () => {
-    if (counter <= 0) return;
-    sliderBox.style.transition = "transform 0.5s ease-in-out";
-    counter--;
-    sliderBox.style.transform = 'translateX(' + (-size * counter) + 'px)';
-});
+// leftBtn.addEventListener('click', () => {
+//     if (counter <= 0) return;
+//     sliderBox.style.transition = "transform 0.5s ease-in-out";
+//     counter--;
+//     sliderBox.style.transform = 'translateX(' + (-size * counter) + 'px)';
+// });
 
 sliderBox.addEventListener('transitionend', () => {
     //console.log(slider[counter]);
