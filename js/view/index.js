@@ -34,7 +34,7 @@ for (let x = 0; x < kind_li.length; x++) {
                 e.style.transition = `all 1.5s`;
                 e.style.opacity = `1`;
                 e.style.transform = `translateX(10%)`;
-            }, 100 * i);
+            }, 200 * i);
         })
         publicKind[x].style.transition = `all 1.5s`;
         publicKind[x].style.transform = `translateX(0%)`;
