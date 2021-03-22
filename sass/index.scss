@@ -71,6 +71,11 @@ div#aside{
                     font-size:26px;
                 }
             }
+            li.slowShow{
+                transition:all 1.5s;
+                opacity: 1;
+                transform:translateX(10%);
+            }
         }
         ul.mouseShow{
             display:block;
@@ -551,7 +556,7 @@ div#section05{
             background-color: #ccc;
             height: 2px;
             width: 100%;
-            margin:5% auto 5%;
+            margin:5% auto 3%;
             span.smallBar{
                 display:block;
                 width:33.3%;
@@ -561,8 +566,19 @@ div#section05{
             }
         }
         div.storeName{
+            position: relative;
+            height: 15px;
             h2{
-                display:inline-block;
+                position: absolute;
+                font-size: 14px;
+                font-family: 'Noto Sans TC';
+                font-weight: 300;
+                color:#333333;
+                transition:all,1s;
+                opacity: 0;
+            }
+            h2.store{
+                opacity: 1;
             }
         }
     }

@@ -31,13 +31,14 @@ for (let x = 0; x < kind_li.length; x++) {
         publicKind[x].classList.add('mouseShow');
         publicKind_li.forEach((e, i) => {
             setTimeout(() => {
-                e.style.transition = `all 1.5s`;
-                e.style.opacity = `1`;
-                e.style.transform = `translateX(10%)`;
-            }, 200 * i);
-        })
-        publicKind[x].style.transition = `all 1.5s`;
-        publicKind[x].style.transform = `translateX(0%)`;
+                // e.style.transition = `all 1.5s`;
+                // e.style.opacity = `1`;
+                // e.style.transform = `translateX(10%)`;
+                e.classList.add('slowShow');
+            }, 100 * i);
+        });
+        // publicKind[x].style.transition = `all 1.5s`;
+        // publicKind[x].style.transform = `translateX(0%)`;
         // publicKind[x].style.display = `block`;
     });
 }
@@ -136,10 +137,13 @@ const slider = document.querySelectorAll('.carouselSlider img');
 const leftBtn = document.querySelector('#s05left');
 const rightBtn = document.querySelector('#s05right');
 const s05smallBar = document.querySelector('div.s5_progressBar > span.smallBar');
+const storeAddress = document.querySelectorAll('div.storeName > h2');
 
 //Counter
 let counter = 1;
 let barCounter = 0;
+let storeNumber = 0;
+let storeNumber2 = -1;
 const size = slider[0].clientWidth;
 const barSize = s05smallBar.clientWidth;
 sliderBox.style.transform = 'translateX(' + (-size * counter) + 'px)';
@@ -155,6 +159,16 @@ function leftmove() {
     }
     barCounter++;
     s05smallBar.style.transform = `translateX(${barSize * barCounter}px)`;
+    if(storeNumber >= 2){
+        storeNumber = -1;
+    }
+    if(storeNumber2 >= 2){
+        storeNumber2 = -1;
+    }
+    storeNumber++;
+    storeNumber2++;
+    storeAddress[storeNumber].classList.add('store');
+    storeAddress[storeNumber2].classList.remove('store');
 };
 //Button Listeners
 rightBtn.addEventListener('click', () => {
@@ -169,7 +183,16 @@ rightBtn.addEventListener('click', () => {
     }
     barCounter++;
     s05smallBar.style.transform = `translateX(${barSize * barCounter}px)`;
-
+    if(storeNumber >= 2){
+        storeNumber = -1;
+    }
+    if(storeNumber2 >= 2){
+        storeNumber2 = -1;
+    }
+    storeNumber++;
+    storeNumber2++;
+    storeAddress[storeNumber].classList.add('store');
+    storeAddress[storeNumber2].classList.remove('store');
 });
 
 leftBtn.addEventListener('click', () => {
@@ -194,6 +217,6 @@ sliderBox.addEventListener('transitionend', () => {
 });
 
 
-    // setInterval(leftmove, 2000);
+    setInterval(leftmove, 5000);
 // })();
 
