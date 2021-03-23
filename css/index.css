@@ -54,6 +54,24 @@ div#aside div.left a h1#asideLogo {
 
 div#aside div.left ul.aside_kind li {
   margin-bottom: 3%;
+  position: relative;
+  display: inline-block;
+}
+
+div#aside div.left ul.aside_kind li :after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  border-bottom: 0px solid #333333;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+div#aside div.left ul.aside_kind li :hover:after {
+  width: 100%;
+  border-bottom: 1px solid #333333;
 }
 
 div#aside div.left ul.aside_kind li a {
@@ -94,8 +112,8 @@ div#aside div.middle ul.public_kind li a {
 }
 
 div#aside div.middle ul.public_kind li.slowShow {
-  -webkit-transition: all 1.5s;
-  transition: all 1.5s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
   opacity: 1;
   -webkit-transform: translateX(10%);
           transform: translateX(10%);
@@ -188,7 +206,7 @@ div#background img {
 div#section01 {
   position: absolute;
   width: 100%;
-  top: 7%;
+  top: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -736,5 +754,32 @@ div#section05 div.right div.storeName h2 {
 
 div#section05 div.right div.storeName h2.store {
   opacity: 1;
+}
+
+div#section6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 500px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div#section6 h1#longword {
+  display: block;
+  font-size: 30px;
+  font-family: 'Noto Sans TC';
+  font-weight: 300;
+  color: #333333;
+}
+
+footer {
+  display: block;
+  height: 500px;
+  background-color: #333333;
 }
 /*# sourceMappingURL=index.css.map */
