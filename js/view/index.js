@@ -1,7 +1,10 @@
 // ; (function () {
 //nav 事件委派
-let nav_ul = document.querySelector('ul.left');
-nav_ul.addEventListener('click', navHandler);
+// let nav_ul = document.querySelector('ul.left');
+// nav_ul.addEventListener('click', navHandler);
+let navButton = document.querySelectorAll('ul.left > li');
+let shoppingButton = navButton[0];
+shoppingButton.addEventListener('click',navHandler);
 
 function navHandler(e) {
     let nav_aside = document.querySelector('div#aside');
@@ -27,6 +30,9 @@ for (let x = 0; x < kind_li.length; x++) {
             publicKind[y].style.transform = `translateX(-10%)`;
             // publicKind[y].style.display = `none`;
             publicKind[y].classList.remove('mouseShow');
+            publicKind_li.forEach((e)=>{
+                e.classList.remove('slowShow');
+            })
         }
         publicKind[x].classList.add('mouseShow');
         publicKind_li.forEach((e, i) => {
@@ -35,7 +41,7 @@ for (let x = 0; x < kind_li.length; x++) {
                 // e.style.opacity = `1`;
                 // e.style.transform = `translateX(10%)`;
                 e.classList.add('slowShow');
-            }, 100 * i);
+            }, 50 * i);
         });
         // publicKind[x].style.transition = `all 1.5s`;
         // publicKind[x].style.transform = `translateX(0%)`;
@@ -203,7 +209,8 @@ function leftmove() {
 // });
 
 sliderBox.addEventListener('transitionend', () => {
-    //console.log(slider[counter]);
+    // console.log(slider[counter]);
+    // console.log(counter);
     if (slider[counter].id == 'lastClone') {
         sliderBox.style.transition = 'none';
         counter = slider.length - 2;
@@ -217,6 +224,6 @@ sliderBox.addEventListener('transitionend', () => {
 });
 
     //計時器
-    setInterval(leftmove, 5000);
+    setInterval(leftmove, 3000);
 // })();
 
