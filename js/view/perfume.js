@@ -44,13 +44,13 @@ let scrollpos = 0;
 let delay = 0;
 
 scene.on('update',e =>{
-    scrollpos = e.scrollPos / 1000;//e.scrollPos為事件中的參數
+    scrollpos = e.scrollPos / 900;//e.scrollPos為事件中的參數
 }); 
 
 setInterval(()=>{
-    delay += (scrollpos - delay) * accelamount;
-    console.log(scrollpos,delay);
+    delay += (scrollpos - delay) - accelamount;
+    // console.log(scrollpos,delay);
 
     video.currentTime = scrollpos;
-},50);
+},100);
 window.addEventListener('scroll', scrollHandler);
