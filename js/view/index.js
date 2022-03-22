@@ -176,7 +176,7 @@ function leftmove() {
     storeAddress[storeNumber].classList.add('store');
     storeAddress[storeNumber2].classList.remove('store');
 };
-//Button Listeners
+// // Button Listeners
 // rightBtn.addEventListener('click', () => {
 //     if (counter >= slider.length - 1) return;
 //     sliderBox.style.transition = "transform 0.5s ease-in-out";
